@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DIE FROGE DIE</title>
+    <style type="text/css">
+      h2{
+        text-align: center;
+        font-size: 30px;
+      }
+      img#getImage{
+        width: 300px;
+        height: auto;
+        border: 4px solid #a1a1a1;
+      }
+      div{
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <img src="FROGE.png" id = "getImage">
+    </div>
+    <div>
+      <input type="button" onclick="imagefun()" value="KILL URSELF">
+    </div>
+    <script>
+      function imagefun(){
+        var Image_Id = document.getElementById('getImage')
+        if (Image_Id.src.match("FROGE.png")){
+          Image_Id.src = "DIEFROGEDIEFROGE.jpg";
+        }
+        else {
+          Image_Id.src = "FROGE.png";
+        }
+      }
+    </script>
+  </body>
+</html>
